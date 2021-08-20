@@ -62,8 +62,8 @@ html, body {
 }
 
 .card {
-    -webkit-box-shadow: -1px 5px 10px -3px #000000; 
-    box-shadow: -1px 5px 10px -3px #000000;
+    -webkit-box-shadow: -1px 5px 10px -3px #6e6e6e; 
+    box-shadow: -1px 1px 10px -3px #6e6e6e;
     border-radius: 1rem;
     padding: 2rem;
     display: flex;
@@ -71,6 +71,7 @@ html, body {
     max-width: 40ch;
     margin: 0 auto;
 }
+
 .card h3 {
     padding-bottom: 1em;
 }
