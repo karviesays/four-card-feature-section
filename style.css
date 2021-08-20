@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    /* Primary */
+    --red:  hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    /* Neutral */
+    --dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    margin: 5em 0;
+}
+
+.header h2:nth-child(1) {
+    color: var(--grayish-blue);
+    font-size: 2.1rem;
+    font-weight: 200;
+}
+
+.header h2:nth-child(2) {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--dark-blue);
+}
+
+.header p {
+    color: var(--grayish-blue);
+    font-weight: 200;
+    width: 35%;
+}
+
+.card-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   grid-gap: 1rem;
+}
+
+.card {
+    -webkit-box-shadow: -1px 5px 10px -3px #000000; 
+    box-shadow: -1px 5px 10px -3px #000000;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-flow: column;
+    max-width: 40ch;
+    margin: 0 auto;
+}
+.card h3 {
+    padding-bottom: 1em;
+}
+
+.card img{
+    padding-top: 5rem;
+    align-self: flex-end;
+    max-width: 100%;
+    height: auto;
+}
+
+.supervisor{
+    border-top: 4px solid var(--cyan);
+    margin-top: 10rem;
+ 
+}
+
+.teambuilder {
+    border-top: 4px solid var(--red);
+    margin-bottom: 2rem;
+}
+
+.karma {
+    border-top: 4px solid var(--orange);
+ 
+}
+.calc {
+    margin-top: 10rem;
+    border-top: 4px solid var(--blue);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 6rem;
+}
+
+@media (max-width: 1000px){
+    .container {
+        max-width: 375px;
+        margin: 0 auto;
+    }
+
+    .card-container{
+        margin: 0 1rem;
+    }
+
+
+    .header h2:nth-child(1)  {
+        font-size: 1.6rem;
+    }
+
+    .header h2:nth-child(2) {
+        font-size: 1.6rem;
+    }
+
+    .header p {
+        width: 80%;
+    }
+    .card-container {
+        grid-gap: 2rem;
+    }
+    .card {
+        padding: 2rem 1rem;
+    }
+    .card img{
+        padding-top: 1rem;
+    }
+    .supervisor, .calc {
+        margin: 0;
+    }
+    .teambuilder {
+        margin-bottom: 2rem;
+    }
+}
